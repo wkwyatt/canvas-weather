@@ -3,14 +3,39 @@
 <head>
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="current-temp">
-		<canvas id="weather-canvas">
-			
-		</canvas>
+	<div id="widget-wrapper">
+		<div id="search-form-wrapper">
+			<form id="search-form" class="form-inline" name="search-form">
+				<input id="weather-location-search" class="form-control" type="search" name="" value="" placeholder="">
+				<button id="location-search" class="btn btn-primary" type="submit">Search</button>
+			</form>
+		</div>
+		<div id="weather-icon">
+		</div>
+		<div id="weather-location">
+		</div>
+		<div id="current-temp">
+			<canvas id="weather-canvas">
+				
+			</canvas>
+			<div class="wind-arrow">
+			<!-- 	<h3>Wind Speed is <span id="windspeed"></span></h3> -->
+				<span class="compass-dir" id="north">N</span>
+				<span class="compass-dir" id="west">W</span>
+				<span class="compass-dir" id="east">E</span>
+				<span class="compass-dir" id="south">S</span>
+				<img src="images/arrow.jpg" >
+			</div>
+			<div>
+		</div>
+		<div id="weekly-forecast">
+
+		</div>
 	</div>
 </body>
 </html>

@@ -1,8 +1,82 @@
-#current-temp {
-	height: 500px;
+#widget-wrapper {
+	position: relative;
+	width: 900px;
+	margin: auto;
+	text-align: center;
+	padding-top: 35px;
+	/*background: #8989ff;*/
+}
+
+#widget-wrapper::after {
+	content: "";
+	background: url('images/cloud-background.jpg') center center fixed;
+	opacity: 0.2;
+	position: absolute;
+	z-index: -1;  
+}
+
+
+#current-temp {	
+	position: relative;
+	margin-top: 20px;
 	width: 100%;
 }
 
+#weather-location {
+	font-size: 36px;
+	font-family: Arial, serif;
+	text-align: center;
+}
+
+#weather-icon img {
+	width: 80px;
+}
+
 #weather-canvas {
+	margin-top: 20px;
 	height: 250px;
+}
+
+.daily-forecast {
+	display: inline-block;
+	margin: 0 15px;
+}
+.wind-arrow {
+	position: absolute;
+	right: 50px;
+	top: 75px;
+}
+
+.compass-dir {
+	position:  absolute;
+	font-size: 32px;
+}
+
+#north, #south {
+	right: 60px;
+}
+
+#north {
+	top: -50px;
+}
+
+#south {
+	bottom: -50px;
+}
+
+#east, #west {
+	top: 40px;
+}
+
+#west {
+	right: 140px;
+}
+
+#east {
+	right: -20px;
+}
+
+.wind-arrow img {
+	width: 100%;
+	transition: all 1.5s;
 }
